@@ -17,9 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Product.views import TeamDCViewset, TeamMarvelViewset
+from rest_framework.routers import DefaultRouter
+
+router = DefaultRouter()
+router.register(r'teamdc', TeamDCViewset, basename='teamdc')
+router.register(r'teammarvel', TeamMarvelViewset, basename='teammarvel')
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("teamdc", TeamDCViewset.as_view({'get':'list','post':'create'})),
-    path("teammarvel", TeamMarvelViewset.as_view({'get':'list','post':'create'}))
-]
+] + router.urls
+

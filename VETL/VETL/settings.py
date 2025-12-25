@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['*', 'https://unchided-giovanni-uncultivable.ngrok-free.dev','localhost','127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = ['https://unchided-giovanni-uncultivable.ngrok-free.dev']
+CORS_ALLOWED_ORIGINS = ["http://localhost:3000"]
 # Application definition
 
 INSTALLED_APPS = [
@@ -76,10 +77,20 @@ WSGI_APPLICATION = "VETL.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'superheroes_db',
+        'USER': 'postgres',
+        'PASSWORD': 'admin',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
