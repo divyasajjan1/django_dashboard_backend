@@ -95,15 +95,22 @@ WSGI_APPLICATION = "VETL.wsgi.application"
 #     }
 # }
 
+print("="*50)
+print("DEBUG: Checking environment variables")
+print(f"DB_HOST: {os.environ.get('DB_HOST', 'NOT SET')}")
+print(f"DB_NAME: {os.environ.get('DB_NAME', 'NOT SET')}")
+print(f"DB_USER: {os.environ.get('DB_USER', 'NOT SET')}")
+print(f"DB_PORT: {os.environ.get('DB_PORT', 'NOT SET')}")
+print("="*50)
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME', 'superheroes_db'),
-        'USER': os.environ.get('DB_USER', 'postgres'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', 'admin'),
-        'HOST': os.environ.get('DB_HOST', 'localhost'),
-        'PORT': os.environ.get('DB_PORT', '5432'),
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT'),
         'OPTIONS': {
             'sslmode': 'require',  # Required for Azure PostgreSQL
         }
