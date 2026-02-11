@@ -97,13 +97,6 @@ WSGI_APPLICATION = "VETL.wsgi.application"
 #     }
 # }
 
-print("="*50)
-print("DEBUG: Checking environment variables")
-print(f"DB_HOST: {os.environ.get('DB_HOST', 'NOT SET')}")
-print(f"DB_NAME: {os.environ.get('DB_NAME', 'NOT SET')}")
-print(f"DB_USER: {os.environ.get('DB_USER', 'NOT SET')}")
-print(f"DB_PORT: {os.environ.get('DB_PORT', 'NOT SET')}")
-print("="*50)
 
 DATABASES = {
     'default': {
@@ -114,7 +107,7 @@ DATABASES = {
         'HOST': os.environ.get('DB_HOST'),
         'PORT': os.environ.get('DB_PORT'),
         'OPTIONS': {
-            'sslmode': 'require',  # Required for Azure PostgreSQL
+            'sslmode': 'require',
         }
     }
 }
