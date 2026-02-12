@@ -27,7 +27,7 @@ jobs:
         run: |
           mkdir package
           cp -r VETL package/
-          cp requirements.txt package/
+          cp VETL/requirements.txt package/
           cd package
           zip -r ../app.zip .
       
