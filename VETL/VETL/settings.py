@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "Product",
+    "VETL.Product",
     "rest_framework",
     "corsheaders"
 ]
