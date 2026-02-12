@@ -57,7 +57,7 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware"
 ]
 
-ROOT_URLCONF = "VETL.urls"
+ROOT_URLCONF = "VETL.VETL.urls"
 
 TEMPLATES = [
     {
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "VETL.wsgi.application"
+WSGI_APPLICATION = "VETL.VETL.wsgi.application"
 
 
 # Database
