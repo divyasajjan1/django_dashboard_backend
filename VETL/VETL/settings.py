@@ -37,7 +37,7 @@ CSRF_TRUSTED_ORIGINS = ['https://django-on-azure-cgacb9hkbjavczfv.canadacentral-
 CORS_ALLOWED_ORIGINS = ['https://django-on-azure-cgacb9hkbjavczfv.canadacentral-01.azurewebsites.net']
 # Application definition
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOW_CREDENTIALS = True
 INSTALLED_APPS = [
     "django.contrib.admin",
