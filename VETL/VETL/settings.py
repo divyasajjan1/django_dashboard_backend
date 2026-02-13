@@ -25,6 +25,11 @@ SECRET_KEY = "django-insecure-9&fio2p_x1fhuh7r)yjl6p#e57&_%bmjj=om4m@#y=*tj!cg3=
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# ALLOWED_HOSTS = ['*', 'https://unchided-giovanni-uncultivable.ngrok-free.dev','localhost','127.0.0.1']
+
+# CSRF_TRUSTED_ORIGINS = ['https://unchided-giovanni-uncultivable.ngrok-free.dev']
+# CORS_ALLOWED_ORIGINS = ["http://localhost:3000"]
+
 
 ALLOWED_HOSTS = ['*', 'https://djangoappsnew-gugyfkcnbgacc8ga.canadacentral-01.azurewebsites.net','.azurewebsites.net']
 
