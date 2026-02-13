@@ -31,10 +31,10 @@ DEBUG = True
 # CORS_ALLOWED_ORIGINS = ["http://localhost:3000"]
 
 
-ALLOWED_HOSTS = ['*', 'https://djangoappsnew-gugyfkcnbgacc8ga.canadacentral-01.azurewebsites.net','.azurewebsites.net']
+ALLOWED_HOSTS = ['*', 'https://django-on-azure-cgacb9hkbjavczfv.canadacentral-01.azurewebsites.net','.azurewebsites.net']
 
-CSRF_TRUSTED_ORIGINS = ['https://djangoappsnew-gugyfkcnbgacc8ga.canadacentral-01.azurewebsites.net']
-CORS_ALLOWED_ORIGINS = ['https://djangoappsnew-gugyfkcnbgacc8ga.canadacentral-01.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = ['https://django-on-azure-cgacb9hkbjavczfv.canadacentral-01.azurewebsites.net']
+CORS_ALLOWED_ORIGINS = ['https://django-on-azure-cgacb9hkbjavczfv.canadacentral-01.azurewebsites.net']
 # Application definition
 
 CORS_ALLOW_ALL_ORIGINS = True
